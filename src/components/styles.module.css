@@ -1,0 +1,91 @@
+.avatar {
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 80px;
+  background-color: var(--green-light-hover);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--green);
+  font-size: 0.562rem;
+  font-weight: 700;
+
+  z-index: 99;
+}
+
+.avatar div {
+  position: absolute;
+  z-index: 999;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #00a4a4;
+  top: 0;
+  right: 0;
+  border: 1px solid #fff;
+}
+
+.avatarIcon {
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 80px;
+}
+
+.avatarIcon div {
+  position: absolute;
+  z-index: 999;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #00a4a4;
+  top: 0;
+  right: 0;
+  border: 1px solid #fff;
+}
+
+.avatarIcon img {
+  object-fit: cover;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 99;
+}
+
+.md {
+  width: 2.5rem;
+  height: 2.5rem;
+
+  font-size: 1rem;
+}
+
+.md div {
+  width: 11.5px;
+  height: 11.5px;
+  border: 1.5px solid #fff;
+}
+
+.md img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.lg {
+  width: 3.5rem;
+  height: 3.5rem;
+
+  font-size: 1.125rem;
+}
+
+.lg div {
+  width: 14px;
+  height: 14px;
+  border: 2px solid #fff;
+}
+
+.lg img {
+  width: 3.5rem;
+  height: 3.5rem;
+}

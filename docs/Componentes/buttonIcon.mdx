@@ -1,0 +1,119 @@
+---
+id: button-icon
+title: Button Icon
+sidebar_label: Button Icon
+---
+
+import ButtonIcon from "../../src/components/ButtonIcon";
+
+## Como utilizar?
+
+Para utilizar o componente é necessário realizar a importação.
+
+```js
+import ButtonIcon from "../components/ButtonIcon";
+```
+
+Após realizar a importação do componente adicione a tag em seu arquivo `.tsx`.
+
+**Utilização básica**:
+
+```js
+<ButtonIcon />
+```
+
+<ButtonIcon />
+
+<br />
+
+## Propriedades
+
+### Tipo:
+
+A propriedade `tipo` altera o estilo do componente de acordo com o tema configurado. `tipo` não é obrigatório, seu valor padrão sempre vai ser: `primary`.
+
+Valores disponíveis: `tipo="primary"` `tipo="secondary"` `tipo="disabled"` `tipo="secondaryDisable"`
+
+```js
+<Avatar online={true}>
+  BP
+</Avatar>
+
+<Avatar online={false}>
+  BP
+</Avatar>
+```
+
+<div>
+  <Avatar online={true}>BP</Avatar>
+  <br />
+  <Avatar online={false}>BP</Avatar>
+</div>
+
+<br />
+
+```js
+<AvatarIcon img="https://www.w3schools.com/howto/img_avatar.png" online={true}/>
+
+<AvatarIcon img="https://www.w3schools.com/howto/img_avatar.png" online={false}/>
+```
+
+<div>
+  <AvatarIcon
+    img="https://www.w3schools.com/howto/img_avatar.png"
+    online={true}
+  />
+  <br />
+  <AvatarIcon
+    img="https://www.w3schools.com/howto/img_avatar.png"
+    online={false}
+  />
+</div>
+
+### Size:
+
+A propriedade `size` altera o tamanho do componente. `size` não é obrigatória, seu valor padrão sempre vai ser: `small`.
+
+Valores disponíveis: `size="md"` ou `size="lg"`
+
+```js
+<Avatar
+  size="md"
+  online={true} >
+  BP
+</Avatar>
+
+ <Avatar
+  size="lg"
+  online={true} >
+  BP
+</Avatar>
+```
+
+<div>
+  <Avatar online={true} size="md">
+    BP
+  </Avatar>
+  <br />
+  <Avatar online={true} size="lg">
+    BP
+  </Avatar>
+</div>
+
+### Img:
+
+A propriedade `img` adiciona uma imagem no componente. `img` é obrigatório e deve ser utilizada apenas no componente `AvatarIcon`.
+
+```js
+<AvatarIcon
+  img="https://www.w3schools.com/howto/img_avatar.png"
+  online={true}
+  size="lg"
+/>
+```
+
+<AvatarIcon
+  img="https://www.w3schools.com/howto/img_avatar.png"
+  online={true}
+  size="lg"
+/>
