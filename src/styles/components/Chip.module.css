@@ -1,0 +1,33 @@
+.chip {
+  background-color: var(--green);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 6.125rem;
+  height: 2.5rem;
+  padding: 0.5rem, 0;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.chip img {
+  margin-right: 0.625rem;
+  width: 1rem;
+}
+.chipBorder {
+  background-color: #fff;
+  border: 1px solid var(--green);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 6.125rem;
+  height: 2.5rem;
+  padding: 0.5rem, 0;
+  color: var(--green);
+  font-size: 1rem;
+  font-weight: 600;
+}

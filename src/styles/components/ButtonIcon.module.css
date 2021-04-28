@@ -8,6 +8,7 @@
   border-radius: 12px;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 .button:hover {
   transition: background-color 0.2s;

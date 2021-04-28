@@ -4,7 +4,7 @@ import { CircularProgress } from "@material-ui/core";
 import styles from "../styles/components/ButtonIcon.module.css";
 
 interface Props {
-  tipo?: string;
+  color: "primary" | "secondary" | "disabled" | "secondaryDisable";
   width?: string;
   height?: string;
   progress?: "true" | "false";
@@ -16,12 +16,14 @@ type ButtonProps = Props & ButtonHTMLAttributes<HTMLButtonElement>;
 const Button: React.FC<ButtonProps> = ({ children, ...rest }) => (
   <button
     type="button"
-    className={`${styles.button} ${styles[rest.tipo]} ${styles[rest.progress]}`}
+    className={`${styles.button} ${styles[rest.color]} ${
+      styles[rest.progress]
+    }`}
     style={{ width: rest.width, height: rest.height }}
     {...rest}
   >
     {rest.progress === "true" ? (
-      rest.tipo ? (
+      rest.color ? (
         <CircularProgress
           size="3rem"
           style={{
@@ -36,7 +38,7 @@ const Button: React.FC<ButtonProps> = ({ children, ...rest }) => (
           style={{ width: "15px", height: "15px", color: "#fff" }}
         />
       )
-    ) : rest.tipo === "secondary" || rest.tipo === "secondaryDisable" ? (
+    ) : rest.color === "secondary" || rest.color === "secondaryDisable" ? (
       <img src="/icons/arrowRight.svg" alt="arrow" />
     ) : (
       <img src="/icons/arrowLeft.svg" alt="arrow" />

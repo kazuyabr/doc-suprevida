@@ -1,0 +1,68 @@
+---
+id: tooltip
+title: Tooltip
+sidebar_label: Tooltip
+custom_edit_url: null
+---
+
+import { BlackToolTip } from "../../src/components/ToolTip";
+
+## Como utilizar?
+
+Para utilizar o componente é necessário realizar a importação.
+
+```tsx
+import { BlackToolTip } from "../components/Tooltip";
+```
+
+Após realizar a importação adicione o componente no arquivo `.tsx`.
+
+**Utilização básica**:
+
+```tsx
+<BlackToolTip title="Lorem Ipsum is simply" arrow>
+  <strong>Olá</strong>
+</BlackToolTip>
+```
+
+<BlackToolTip title="Lorem Ipsum is simply" arrow>
+  <strong>Olá</strong>
+</BlackToolTip>
+<br />
+<br />
+
+BlackToolTip deve ser usado encapsulando outra `tag`.
+
+## Propriedades
+
+### Title:
+
+A propriedade `title` adiciona um texto no compoente, `title` é obrigatório.
+
+```tsx
+<BlackToolTip title="Lorem Ipsum is simply" arrow>
+  <strong>Olá</strong>
+</BlackToolTip>
+```
+
+<BlackToolTip title="Lorem Ipsum is simply" arrow>
+  <strong>Olá</strong>
+</BlackToolTip>
+<br />
+
+### Arrow:
+
+A propriedade `arrow` adiciona uma flecha no compoente, `arrow` é obrigatório.
+
+```tsx
+<BlackToolTip
+  title="Lorem Ipsum is simply dummy text of the printing and typesetting"
+  arrow
+>
+  <strong>Olá</strong>
+</BlackToolTip>
+```
+
+<BlackToolTip title="Lorem Ipsum is simply" arrow>
+  <strong>Olá</strong>
+</BlackToolTip>

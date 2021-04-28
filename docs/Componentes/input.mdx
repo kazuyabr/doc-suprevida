@@ -1,0 +1,63 @@
+---
+id: input
+title: Input
+sidebar_label: Input
+custom_edit_url: null
+---
+
+import { Input } from "../../src/components/Input";
+
+## Como utilizar?
+
+Para utilizar o componente é necessário realizar a importação.
+
+```tsx
+import { Input } from "../components/Input";
+```
+
+Após realizar a importação adicione o componente no arquivo `.tsx`.
+
+**Utilização básica**:
+
+```tsx
+<Input placeholder="Placeholder" name="input"></Input>
+```
+
+<Input placeholder="Placeholder" name="input"></Input>
+
+## Propriedades
+
+### Name:
+
+A propriedade `name` adiciona um nome para identificação do componente. `name` é obrigatório.
+
+```tsx
+<Input placeholder="Placeholder" name="input"></Input>
+```
+
+<Input placeholder="Placeholder" name="input"></Input>
+
+### Disabled:
+
+A propriedade `disabled` desabilita o componente e adiciona um estilo novo, `disabled` não é obrigatório, seu valor padrão sempre vai ser `false`.
+
+```tsx
+<Input placeholder="Placeholder" name="input" disabled></Input>
+```
+
+<Input placeholder="Placeholder" name="input" disabled></Input>
+<br />
+<br />
+
+### Width:
+
+A propriedade `width` altera a largura do componente. `width` não é obrigatório, seu valor padrão sempre vai ser: `0`.
+
+```tsx
+<Input placeholder="Placeholder" name="input" width="22rem"></Input>
+```
+
+<Input placeholder="Placeholder" name="input" width="22rem"></Input>
+
+**Obs:** Todas as propriedades padrões de um componente HTML `input` estão disponíveis,
+por exemplo: `onClick`, `placeholder`, `name` etc..

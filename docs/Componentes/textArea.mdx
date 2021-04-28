@@ -1,0 +1,43 @@
+---
+id: text-area
+title: Text Area
+sidebar_label: Text Area
+custom_edit_url: null
+---
+
+import TextArea from "../../src/components/TextArea";
+
+## Como utilizar?
+
+Para utilizar o componente é necessário realizar a importação.
+
+```tsx
+import TextArea from "../components/TextArea";
+```
+
+Após realizar a importação adicione o componente no arquivo `.tsx`.
+
+**Utilização básica**:
+
+```tsx
+<TextArea placeholder="Digite aqui"></TextArea>
+```
+
+<TextArea placeholder="Digite aqui"></TextArea>
+
+## Propriedades
+
+### Disabled:
+
+A propriedade `disabled` desabilita o componente e adciona um estilo novo, `disabled` não é obrigatório, seu valor padrão sempre vai ser `false`.
+
+```tsx
+<TextArea placeholder="Digite aqui" disabled></TextArea>
+```
+
+<TextArea placeholder="Digite aqui" disabled></TextArea>
+<br />
+<br />
+
+**Obs:** Todas as propriedades padrões de um componente HTML `textarea` estão disponíveis,
+por exemplo: `onClick`, `placeholder`, `name` etc..

@@ -1,0 +1,94 @@
+---
+id: toats
+title: Toats
+sidebar_label: Toats
+custom_edit_url: null
+---
+
+import Toats from "../../src/components/Toats";
+
+## Como utilizar?
+
+Para utilizar o componente é necessário realizar a importação.
+
+```tsx
+import Toats from "../components/Toats";
+```
+
+Após realizar a importação adicione o componente no arquivo `.tsx`.
+
+Toats deve ser usado com parameto de uma função que retorne `true`, para iniciar o componente.
+
+**Utilização básica**:
+
+```tsx
+{
+  disparToats && (
+    <Toats title=".alert-info" content=".alert-info" type="info" />
+  );
+}
+```
+
+## Propriedades
+
+### Type:
+
+A propriedade `type` altera o estilo do componente, `type` é obrigatório.
+
+Valores disponíveis: `info` `success` `danger` `warning`
+
+```tsx
+<Toats title=".alert-info" content=".alert-info" type="info" />
+```
+
+```tsx
+<Toats title=".alert-success" content=".alert-success" type="success" />
+```
+
+```tsx
+<Toats title=".alert-danger" content=".alert-danger" type="danger" />
+```
+
+```tsx
+<Toats title=".alert-warning" content=".alert-warning" type="warning" />
+```
+
+### Title:
+
+A propriedade `title` adcionado um titulo no compoente. `title` é obrigatório.
+
+```tsx
+<Toats title=".alert-info" content=".alert-info" type="info" />
+```
+
+```tsx
+<Toats title=".alert-success" content=".alert-success" type="success" />
+```
+
+```tsx
+<Toats title=".alert-danger" content=".alert-danger" type="danger" />
+```
+
+```tsx
+<Toats title=".alert-warning" content=".alert-warning" type="warning" />
+```
+
+### Content:
+
+A propriedade `content` adciona um conteudo de texto no compoente. `content` é obrigatório.
+
+```tsx
+<Toats title=".alert-info" content=".alert-info" type="info" />
+```
+
+```tsx
+<Toats title=".alert-success" content=".alert-success" type="success" />
+```
+
+```tsx
+<Toats title=".alert-danger" content=".alert-danger" type="danger" />
+```
+
+```tsx
+<Toats title=".alert-warning" content=".alert-warning" type="warning" />
+```

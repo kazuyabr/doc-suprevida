@@ -1,0 +1,125 @@
+---
+id: tags
+title: Tags
+sidebar_label: Tags
+custom_edit_url: null
+---
+
+import { Tag, TagIcon, TagCircle } from "../../src/components/Tags";
+
+## Como utilizar?
+
+Para utilizar o componente é necessário realizar a importação.
+
+```tsx
+import { Tag, TagIcon, TagCircle } from "../components/Tags";
+```
+
+O arquivo por padrão exporta três componentes, `Tag`, `TagIcon` e `TagCircle`. Após realizar a importação adicione o componente no arquivo `.tsx`.
+
+**Utilização básica**:
+
+```tsx
+<Tag>Pendente</Tag>
+```
+
+<Tag>Pendente</Tag>
+
+<br />
+
+```tsx
+<TagIcon>Pendente</TagIcon>
+```
+
+<TagIcon>Pendente</TagIcon>
+
+<br />
+
+```tsx
+<TagCircle color="green" />
+```
+
+<TagCircle color="green" />
+
+## Propriedades
+
+### Color:
+
+A propriedade `color` alterar a cor do compoente, `color` obrigatório e está disponível apenas para o compoente `TagCircle`
+
+Valores disponíveis: `yellow` `green` `red` `grey`
+
+```tsx
+<TagCircle color="yellow" width="0.5rem" />
+```
+
+<TagCircle color="yellow" width="0.5rem" />
+<br />
+
+```tsx
+<TagCircle color="green" width="0.5rem" />
+```
+
+<TagCircle color="green" width="0.5rem" />
+<br />
+
+```tsx
+<TagCircle color="red" width="0.5rem" />
+```
+
+<TagCircle color="red" width="0.5rem" />
+<br />
+
+```tsx
+<TagCircle color="grey" width="0.5rem" />
+```
+
+<TagCircle color="grey" width="0.5rem" />
+
+### Width:
+
+A propriedade `width` altera a largura do componente. `width` não é obrigatório, seu valor padrão sempre vai ser: `0`.
+
+```tsx
+<Tag width="8rem">Pendente</Tag>
+```
+
+<Tag width="8rem">Pendente</Tag>
+<br />
+
+```tsx
+<TagIcon width="8rem">Pendente</TagIcon>
+```
+
+<TagIcon width="8rem">Pendente</TagIcon>
+<br />
+
+```tsx
+<TagCircle color="green" width="0.5rem" />
+```
+
+<TagCircle color="green" width="0.5rem" />
+
+### Height:
+
+A propriedade `height` altera a altura do componente. `height` não é obrigatório, seu valor padrão sempre vai ser: `0`.
+
+```tsx
+<Tag height="3rem">Pendente</Tag>
+```
+
+<Tag height="3rem">Pendente</Tag>
+<br />
+
+```tsx
+<TagIcon height="3rem">Pendente</TagIcon>
+```
+
+<TagIcon height="3rem">Pendente</TagIcon>
+<br />
+
+```tsx
+<TagCircle color="green" height="0.5rem" />
+```
+
+<TagCircle color="green" height="0.5rem" />

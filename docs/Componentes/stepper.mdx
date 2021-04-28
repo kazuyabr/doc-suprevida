@@ -1,0 +1,42 @@
+---
+id: stepper
+title: Stepper
+sidebar_label: Stepper
+custom_edit_url: null
+---
+
+import Stepper from "../../src/components/Stepper";
+
+## Como utilizar?
+
+Para utilizar o componente é necessário realizar a importação.
+
+```tsx
+import Stepper from "../components/Stepper";
+```
+
+Após realizar a importação adicione o componente no arquivo `.tsx`.
+
+**Utilização básica**:
+
+```tsx
+<Stepper value={0} />
+```
+
+<Stepper value={0} />
+
+## Propriedades
+
+### Value:
+
+A propriedade `value` informa o valor inicial do componente `value` é obrigatório.
+
+```tsx
+<Stepper value={2} />
+```
+
+<Stepper value={2} />
+<br />
+
+**Obs:** Todas as propriedades padrões de um componente HTML `button` estão disponíveis, por exemplo: `onClick`, `onChange`,
+`name` etc..

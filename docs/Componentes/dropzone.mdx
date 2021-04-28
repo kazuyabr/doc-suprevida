@@ -1,0 +1,33 @@
+---
+id: dropzone
+title: Dropzone
+sidebar_label: Dropzone
+custom_edit_url: null
+---
+
+## Como utilizar?
+
+Para utilizar o componente é necessário realizar a importação.
+
+```tsx
+import { DropZone } from "../components/DropZone";
+```
+
+Após realizar a importação adicione o componente no arquivo `.tsx`.
+
+**Utilização básica**:
+
+```tsx
+<DropZone name="dropzone"></DropZone>
+```
+
+### Name:
+
+A propriedade `name` adiciona um nome para identificação do componente. `name` é obrigatório.
+
+```tsx
+<DropZone name="dropzone1"></DropZone>
+```
+
+**Obs:** Todas as propriedades padrões de um componente HTML `input type="file"` estão disponíveis,
+por exemplo: `onClick`, `onChange`, `name` etc..

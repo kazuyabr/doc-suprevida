@@ -1,0 +1,62 @@
+---
+id: radio-button
+title: Radio
+sidebar_label: Radio
+custom_edit_url: null
+---
+
+import { Radio } from "../../src/components/Radio";
+
+## Como utilizar?
+
+Para utilizar o componente é necessário realizar a importação.
+
+```tsx
+import { Radio } from "../components/Radio";
+```
+
+Após realizar a importação adicione o componente no arquivo `.tsx`.
+
+**Utilização básica**:
+
+```tsx
+<Radio name="radio1"></Radio>
+```
+
+<Radio name="radio1"></Radio>
+
+## Propriedades
+
+### Disabled:
+
+A propriedade `disabled` desabilita o componente e adiciona um estilo novo, `disabled` não é obrigatório, seu valor padrão sempre vai ser `false`.
+
+```tsx
+<Radio name="radio2" disabled></Radio>
+```
+
+<Radio name="radio2" disabled></Radio>
+
+### Name:
+
+A propriedade `name` adiciona um nome para identificação do componente. `name` é obrigatório.
+
+```tsx
+<Radio name="radio3"></Radio>
+```
+
+<Radio name="radio3"></Radio>
+
+### Checked:
+
+A propriedade `checked` informa se o componente quando for carregado vai estar selecionado `checked` não é obrigatório, seu valor padrão sempre vai ser `false`.
+
+```tsx
+<Radio name="radio4" checked></Radio>
+```
+
+<Radio name="radio4" checked></Radio>
+<br />
+
+**Obs:** Todas as propriedades padrões de um componente HTML `input type="radio"` estão disponíveis,
+por exemplo: `onClick`, `placeholder`, `name` etc..

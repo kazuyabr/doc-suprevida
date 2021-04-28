@@ -1,0 +1,52 @@
+---
+id: checkbox
+title: Checkbox
+sidebar_label: Checkbox
+custom_edit_url: null
+---
+
+import Checkbox from "@material-ui/core/Checkbox";
+
+## Como utilizar?
+
+Para utilizar o componente é necessário realizar a importação.
+
+```tsx
+import Checkbox from "@material-ui/core/Checkbox";
+```
+
+Após realizar a importação adicione o componente no arquivo `.tsx`.
+
+**Utilização básica**:
+
+```tsx
+<Checkbox color="primary" />
+```
+
+<Checkbox color="primary" />
+
+## Propriedades
+
+### Disabled:
+
+A propriedade `disabled` desabilita o componente e adiciona um estilo novo, `disabled` não é obrigatório, seu valor padrão sempre vai ser `false`.
+
+```tsx
+<Checkbox disabled color="primary" />
+```
+
+<Checkbox disabled color="primary" />
+
+### DefaultChecked:
+
+A propriedade `defaultChecked` informa se o componente quando for carregado vai estar selecionado `defaultChecked` não é obrigatório, seu valor padrão sempre vai ser `false`.
+
+```tsx
+<Checkbox defaultChecked color="primary" />
+```
+
+<Checkbox defaultChecked color="primary" />
+<br />
+
+**Obs:** Todas as propriedades padrões de um componente HTML `input type="password"` estão disponíveis, por exemplo: `onClick`, `placeholder`,
+`name` etc..

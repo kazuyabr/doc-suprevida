@@ -1,0 +1,56 @@
+---
+id: chip
+title: Chip
+sidebar_label: Chip
+custom_edit_url: null
+---
+
+import { ChipIcon, Chip } from "../../src/components/Chip";
+
+## Como utilizar?
+
+Para utilizar o componente é necessário realizar a importação.
+
+```tsx
+import { ChipIcon, Chip } from "../components/";
+```
+
+O arquivo por padrão exporta dois componentes, `ChipIcon` e `Chip`. Após realizar a importação adicione o componente no arquivo `.tsx`.
+
+**Utilização básica**:
+
+```tsx
+<Chip>Label</Chip>
+```
+
+<Chip>Label</Chip>
+
+<br />
+
+```tsx
+<ChipIcon>Label</ChipIcon>
+```
+
+<ChipIcon>Label</ChipIcon>
+
+## Propriedades
+
+### Width:
+
+A propriedade `width` altera a largura do componente. `width` não é obrigatório, seu valor padrão sempre vai ser: `0`.
+
+```tsx
+<Chip width="6.5rem">Label</Chip>
+```
+
+<Chip width="7.5rem">Label</Chip>
+
+### Height:
+
+A propriedade `height` altera a altura do componente. `height` não é obrigatório, seu valor padrão sempre vai ser: `0`.
+
+```tsx
+<Chip height="4.5rem">Label</Chip>
+```
+
+<Chip height="4.5rem">Label</Chip>

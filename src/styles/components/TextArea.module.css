@@ -1,0 +1,25 @@
+.textArea {
+  width: 17.5rem;
+  height: 5rem;
+  border-radius: 8px;
+  border: 1px solid var(--grey);
+  background: #f8f8f8;
+  padding: 8px;
+  color: var(--title);
+  font-size: 1rem;
+  outline: none;
+}
+.textArea:active {
+  border: 1px solid var(--green);
+}
+.textArea:disabled {
+  color: var(--white);
+  background-color: var(--background-disabled);
+  cursor: not-allowed;
+}
+.textArea::-webkit-input-placeholder {
+  color: var(--gray-line);
+}
+.textArea:disabled::-webkit-input-placeholder {
+  color: var(--grey);
+}

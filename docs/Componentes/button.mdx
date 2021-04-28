@@ -1,0 +1,114 @@
+---
+id: button
+title: Button
+sidebar_label: Button
+custom_edit_url: null
+---
+
+import Button from "../../src/components/Button";
+
+## Como utilizar?
+
+Para utilizar o componente é necessário realizar a importação.
+
+```tsx
+import Button from "../components/Button";
+```
+
+Após realizar a importação adicione o componente no arquivo `.tsx`.
+
+```tsx
+<Button>Entrar</Button>
+```
+
+<Button>Entrar</Button>
+
+## Propriedades
+
+### Color:
+
+A propriedade `color` altera o estilo do componente de acordo com o tema configurado. `color` é obrigatório.
+
+Valores disponíveis: `primary` `secondary` `disabled`
+
+```tsx
+<Button color="primary">Entrar</Button>
+```
+
+<Button color="primary">Entrar</Button>
+<br />
+
+```tsx
+<Button color="secondary" icon="true">
+  Entrar
+</Button>
+```
+
+<Button color="secondary" icon="true">
+  Entrar
+</Button>
+<br />
+
+```tsx
+<Button color="disabled">Disabled</Button>
+```
+
+<Button color="disabled">Disabled</Button>
+
+### Icon:
+
+A propriedade `icon` adicionar um ícone no componente. `icon` não é obrigatória, seu valor padrão sempre vai ser: `false`.
+
+Valores disponíveis: `true` `false`
+
+```tsx
+<Button icon="false">Entrar</Button>
+```
+
+<Button icon="false">Entrar</Button>
+<br />
+
+```tsx
+<Button icon="true">Entrar</Button>
+```
+
+<Button icon="true">Entrar</Button>
+
+### Loading:
+
+A propriedade `loading` retira o texto do botão e coloca uma circular progress no lugar. `loading` não é obrigatório, seu valor padrão sempre vai ser: `false`.
+
+Valores disponíveis: `true` `false`
+
+```tsx
+<Button loading="false">Entrar</Button>
+```
+
+<Button loading="false">Entrar</Button>
+<br />
+
+```tsx
+<Button loading="true">Entrar</Button>
+```
+
+<Button loading="true">Entrar</Button>
+
+### Width:
+
+A propriedade `width` altera a largura do componente. `width` não é obrigatório, seu valor padrão sempre vai ser: `0`.
+
+```tsx
+<Button width="4rem">Entrar</Button>
+```
+
+<Button width="4rem">Entrar</Button>
+
+### Height:
+
+A propriedade `height` altera a altura do componente. `height` não é obrigatório, seu valor padrão sempre vai ser: `0`.
+
+```tsx
+<Button height="3.5rem">Entrar</Button>
+```
+
+<Button height="3.5rem">Entrar</Button>

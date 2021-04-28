@@ -1,0 +1,54 @@
+---
+id: toggle
+title: Toggle
+sidebar_label: Toggle
+custom_edit_url: null
+---
+
+import { Toggle } from "../../src/components/ToggleButton";
+
+## Como utilizar?
+
+Para utilizar o componente é necessário realizar a importação.
+
+```tsx
+import { Toggle } from "../components/ToggleButton";
+```
+
+Após realizar a importação adicione o componente no arquivo `.tsx`.
+
+**Utilização básica**:
+
+```tsx
+<Toggle name="toggle1" />
+```
+
+<Toggle name="toggle1" />
+
+## Propriedades
+
+### Disabled:
+
+A propriedade `disabled` desabilita o componente e adiciona um estilo novo, `disabled` não é obrigatório, seu valor padrão sempre vai ser `false`.
+
+```tsx
+<Toggle name="toggle2" disabled />
+```
+
+<Toggle name="toggle2" disabled />
+
+### Name:
+
+A propriedade `name` adiciona um nome para identificação do componente. `name` é obrigatório.
+
+```tsx
+<Toggle name="toggle3" />
+```
+
+<Toggle name="toggle3" />
+
+<br />
+<br />
+
+**Obs:** Todas as propriedades padrões de um componente HTML `button` estão disponíveis,
+por exemplo: `onClick`, `onChange` etc..

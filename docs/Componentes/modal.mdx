@@ -1,0 +1,54 @@
+---
+id: modal
+title: Modal
+sidebar_label: Modal
+custom_edit_url: null
+---
+
+import { Tag, TagIcon, TagCircle } from "../../src/components/Tags";
+
+## Como utilizar?
+
+Para utilizar o componente é necessário realizar a importação.
+
+```tsx
+import { Modal } from "../components/Modal";
+```
+
+Após realizar a importação adicione o componente no arquivo `.tsx`.
+
+**Utilização básica**:
+
+```tsx
+<Modal open={open} onClose={() => setOpen(false)} />
+```
+
+## Propriedades
+
+### Open:
+
+A propriedade `open` controla a inicialização do componente, `open` é obrigatório.
+
+Valores disponíveis: Sempre informar o `state` que controla a inicialização do componente.
+
+```tsx
+import { useState } from 'react'
+
+const [open, setOpen] = useState(false)
+
+<Modal open={open} onClose={() => setOpen(false)} />
+```
+
+### OnClose:
+
+A propriedade `onClose` controla o encerramento do componente, `onClose` é obrigatório.
+
+Valores disponíveis: Sempre informar o `state` que controla a encerramento do componente.
+
+```tsx
+import { useState } from 'react'
+
+const [open, setOpen] = useState(false)
+
+<Modal open={open} onClose={() => setOpen(false)} />
+```

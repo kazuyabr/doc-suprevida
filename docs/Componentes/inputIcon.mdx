@@ -1,0 +1,57 @@
+---
+id: input-icon
+title: Input Icon
+sidebar_label: Input Icon
+custom_edit_url: null
+---
+
+import { InputIcon } from "../../src/components/InputIcon";
+
+## Como utilizar?
+
+Para utilizar o componente é necessário realizar a importação.
+
+```tsx
+import { InputIcon } from "../components/InputIcon";
+```
+
+Após realizar a importação adicione o componente no arquivo `.tsx`.
+
+**Utilização básica**:
+
+```tsx
+<InputIcon name="inputIcon" placeholder="Placeholder"></InputIcon>
+```
+
+<div style={{ width: "15rem" }}>
+  <InputIcon name="inputIcon" placeholder="Placeholder"></InputIcon>
+</div>
+
+## Propriedades
+
+### Name:
+
+A propriedade `name` adiciona um nome para identificação do componente. `name` é obrigatório.
+
+```tsx
+<InputIcon name="inputIcon" placeholder="Placeholder"></InputIcon>
+```
+
+<div style={{ width: "15rem" }}>
+  <InputIcon name="inputIcon" placeholder="Placeholder"></InputIcon>
+</div>
+
+### Disabled:
+
+A propriedade `disabled` desabilita o componente e adiciona um estilo novo, `disabled` não é obrigatório, seu valor padrão sempre vai ser `false`.
+
+```tsx
+<InputIcon name="inputIcon" placeholder="Placeholder" disabled></InputIcon>
+```
+
+<div style={{ width: "15rem" }}>
+  <InputIcon name="inputIcon" placeholder="Placeholder" disabled></InputIcon>
+</div>
+
+**Obs:** Todas as propriedades padrões de um componente HTML `input` estão disponíveis,
+por exemplo: `onClick`, `placeholder`, `name` etc..
